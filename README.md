@@ -1,5 +1,10 @@
 ## Important Note to Epicodus Students
 
+--
+
+## This practice app is live on Github Pages:
+[Gh-Pages](https://eusebiedev.github.io/Help-Queue-Redux/)
+
 This project contains all the code from the LearnHowToProgram.com [Section 2: React Fundamentals](https://www.learnhowtoprogram.com/react/react-fundamentals) coursework in which we created a Help Queue application in [React.js](https://reactjs.org/). 
 
 It is meant to be used as a starter repo to continue the Help Queue project in three separate learning sections of [the _React_ course](https://www.learnhowtoprogram.com/react) on LearnHowToProgram.com: 
