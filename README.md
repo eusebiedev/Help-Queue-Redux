@@ -1,6 +1,4 @@
-## Important Note to Epicodus Students
-
---
+## Help Queue Ticket App practice
 
 ## This practice app is live on Github Pages:
 [Gh-Pages](https://eusebiedev.github.io/Help-Queue-Redux/)
