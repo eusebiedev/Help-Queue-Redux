@@ -1,7 +1,9 @@
 {
   "name": "fundamentals",
   "version": "0.1.0",
-  "homepage": "https://github.com/eusebiedev/Help-Queue-Redux.git",
+  "repository": {
+    "url": "git+https://github.com/eusebiedev/Help-Queue-Redux"
+  },
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
