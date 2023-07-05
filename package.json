@@ -2,7 +2,7 @@
   "name": "fundamentals",
   "version": "0.1.0",
   "repository": {
-    "url": "git+https://github.com/eusebiedev/Help-Queue-Redux"
+    "url": "https://eusebiedev.github.io/help-queue-redux"
   },
   "private": false,
   "dependencies": {
