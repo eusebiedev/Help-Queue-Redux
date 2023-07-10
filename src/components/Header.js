@@ -11,7 +11,7 @@ function Header() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/sign-in">Sign In</Link>
+          <Link to="/sign-in">Manage Account</Link>
         </li>
       </ul>
     </React.Fragment>
