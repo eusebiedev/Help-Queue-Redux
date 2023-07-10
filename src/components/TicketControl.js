@@ -3,7 +3,7 @@ import NewTicketForm from './NewTicketForm';
 import TicketList from './TicketList';
 import EditTicketForm from './EditTicketForm';
 import TicketDetail from './TicketDetail';
-import db from './../firebase.js';
+import { db, auth } from './../firebase.js';
 import { collection, addDoc, doc, updateDoc, onSnapshot, deleteDoc } from "firebase/firestore";
 function TicketControl() {
 
@@ -89,6 +89,14 @@ function TicketControl() {
     setSelectedTicket(selection);
   }
 
+  if (auth.currentUser == null) {
+    return (
+      <React.Fragment>
+        <h1>You must be signed in to access the queue.</h1>
+      </React.Fragment>
+    )
+  } else if (auth.currentUser != null) {
+
     let currentlyVisibleState = null;
     let buttonText = null; 
 
@@ -127,6 +135,7 @@ function TicketControl() {
         </React.Fragment>
     );
   }
+}
 
 export default TicketControl;
 
