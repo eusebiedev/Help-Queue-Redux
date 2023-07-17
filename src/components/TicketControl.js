@@ -8,7 +8,6 @@ import { collection, addDoc, doc, updateDoc, onSnapshot, deleteDoc } from "fireb
 function TicketControl() {
 
   const [error, setError] = useState(null);
-
   const [formVisibleOnPage, setFormVisibleOnPage] = useState(false);
   const [mainTicketList, setMainTicketList] = useState([]);
   const [selectedTicket, setSelectedTicket] = useState(null);
@@ -50,7 +49,6 @@ function TicketControl() {
   const handleClick = () => {
     if (selectedTicket != null) {
       setFormVisibleOnPage(false);
-      // new code!
       setSelectedTicket(null);
       setEditing(false);
     } else {
@@ -82,10 +80,7 @@ function TicketControl() {
   }
 
   const handleChangingSelectedTicket = (id) => {
-    // new code: updated variable name to 'selection'
-    // so there's no clash with the state variable 'selectedTicket'
     const selection = mainTicketList.filter(ticket => ticket.id === id)[0];
-    // new code!
     setSelectedTicket(selection);
   }
 
